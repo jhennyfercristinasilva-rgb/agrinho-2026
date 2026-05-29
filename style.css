@@ -1,0 +1,179 @@
+/* ============================= */
+/* ECO FARM - ESTILO PROFISSIONAL */
+/* ============================= */
+
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to top, #4CAF50, #87CEEB); /* verde para azul */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ============================= */
+/* CONTAINER DO JOGO */
+#game {
+    width: 90%;
+    max-width: 1000px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #333;
+}
+
+/* ============================= */
+/* HEADER E HUD */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    color: #2E7D32; /* verde escuro */
+    text-shadow: 2px 2px 5px #00000050;
+}
+
+.hud {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* ============================= */
+/* ÁREA DA FAZENDA */
+#farm-area {
+    width: 100%;
+    height: 400px;
+    background-image: url('assets/images/farm-bg.png');
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #5D4037;
+    border-radius: 20px;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+    transition: filter 1s;
+}
+
+#plant {
+    width: 150px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.5s, filter 0.5s;
+}
+
+/* POLUIÇÃO */
+.polluted {
+    filter: grayscale(80%) brightness(50%);
+}
+
+/* ============================= */
+/* CONTROLES */
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    transition: transform 0.3s, background 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #388E3C;
+}
+
+/* ============================= */
+/* BARRAS DE STATUS */
+.bars {
+    width: 80%;
+    margin: 0 auto 20px auto;
+}
+
+.bars label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.bar {
+    width: 100%;
+    height: 25px;
+    background-color: #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.bar div {
+    height: 100%;
+    width: 100%;
+    transition: width 0.5s;
+}
+
+#health-bar { background-color: limegreen; }
+#water-bar { background-color: deepskyblue; }
+#pollution-bar { background-color: crimson; width: 0%; }
+
+/* ============================= */
+/* MENSAGENS */
+#message-box {
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px #3333;
+}
+
+/* ============================= */
+/* RESPONSIVO PARA CELULAR */
+@media (max-width: 768px) {
+    #farm-area {
+        height: 300px;
+    }
+
+    #plant {
+        width: 100px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .hud {
+        font-size: 16px;
+        gap: 15px;
+    }
+
+    .bars {
+        width: 95%;
+    }
+}

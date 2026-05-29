@@ -1,3 +1,102 @@
 <html>
-    
+    ```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Eco Farm</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="game">
+
+  <header>
+
+    <h1>🌱 ECO FARM 🌱</h1>
+
+    <div class="hud">
+
+      <div>💰 <span id="money">100</span></div>
+
+      <div>🏆 <span id="score">0</span></div>
+
+      <div>🌾 Fase <span id="phase">1</span></div>
+
+      <div>☀️ <span id="weather">Ensolarado</span></div>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <div id="farm-area">
+
+      <img id="plant" src="assets/images/plant-stage-1.png">
+
+    </div>
+
+    <div class="controls">
+
+      <button onclick="plantSeed()">🌱 Plantar</button>
+
+      <button onclick="waterPlant()">💧 Regar</button>
+
+      <button onclick="fertilizePlant()">🧪 Adubo</button>
+
+      <button onclick="sprayPlant()">☠️ Veneno</button>
+
+      <button onclick="harvestPlant()">🚜 Colher</button>
+
+      <button onclick="cleanPollution()">🧹 Limpar</button>
+
+    </div>
+
+    <div class="bars">
+
+      <label>Vida</label>
+      <div class="bar">
+        <div id="health-bar"></div>
+      </div>
+
+      <label>Água</label>
+      <div class="bar">
+        <div id="water-bar"></div>
+      </div>
+
+      <label>Poluição</label>
+      <div class="bar">
+        <div id="pollution-bar"></div>
+      </div>
+
+    </div>
+
+    <div id="message-box">
+
+      Bem-vindo agricultor 🌾
+
+    </div>
+
+  </main>
+
+</div>
+
+<script src="audio.js"></script>
+<script src="weather.js"></script>
+<script src="save.js"></script>
+<script src="phases.js"></script>
+<script src="ui.js"></script>
+<script src="game.js"></script>
+
+</body>
+</html>
+```
+
 </html>
