@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroForte | Início</title>
+    <title>AgroForte | Contato</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -24,19 +24,22 @@
             <i class="fa-solid fa-leaf"></i> Agro<span>Forte</span>
         </div>
         <nav>
-            <a href="index.html" class="nav-btn active">Início</a>
+            <a href="index.html" class="nav-btn">Início</a>
             <a href="tecnologia.html" class="nav-btn">Tecnologia</a>
             <a href="sustentabilidade.html" class="nav-btn">Sustentabilidade</a>
-            <a href="contato.html" class="nav-btn">Contato</a>
+            <a href="contato.html" class="nav-btn active">Contato</a>
         </nav>
     </header>
 
-    <main class="container">
-        <section class="hero">
-            <h1>O Futuro da Agricultura é Sustentável</h1>
-            <p>Unindo a força do campo com a inovação tecnológica para alimentar o mundo em harmonia com a natureza.</p>
-            <a href="tecnologia.html" class="cta-btn">Conheça a Tecnologia</a>
-        </section>
+    <main class="container page-content">
+        <h2>Fale Conosco</h2>
+        <p class="subtitle">Junte-se à revolução do agro sustentável e tire suas dúvidas.</p>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso!');">
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu E-mail" required>
+            <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+            <button type="submit" class="cta-btn">Enviar Mensagem</button>
+        </form>
     </main>
 
     <footer>
