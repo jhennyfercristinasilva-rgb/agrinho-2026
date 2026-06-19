@@ -1,99 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-<link rel="stylesheet" href="style.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Eco Farm</title>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agro Forte & Futuro Sustentável</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-
 <body>
 
-<div id="game">
-
   <header>
-
-    <h1>🌱 ECO FARM 🌱</h1>
-
-    <div class="hud">
-
-      <div>💰 <span id="money">100</span></div>
-
-      <div>🏆 <span id="score">0</span></div>
-
-      <div>🌾 Fase <span id="phase">1</span></div>
-
-      <div>☀️ <span id="weather">Ensolarado</span></div>
-
-    </div>
-
+    <h1>🌱 Agro Forte & Futuro Sustentável</h1>
+    <p>Produzindo hoje, preservando o amanhã</p>
   </header>
 
-  <main>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#tecnologia">Tecnologia</a>
+    <a href="#sustentabilidade">Sustentabilidade</a>
+    <a href="#contato">Contato</a>
+  </nav>
 
-    <div id="farm-area">
+  <section class="hero">
+    <h2>O futuro do agronegócio é inteligente e sustentável</h2>
+    <button onclick="mostrarMensagem()">Saiba mais</button>
+  </section>
 
-      <img id="plant" src="assets/images/plant-stage-1.png">
-      
+  <section id="sobre">
+    <h2>Sobre o projeto</h2>
+    <p>
+      O Agro Forte promove inovação no campo com foco em produtividade,
+      preservação ambiental e uso consciente dos recursos naturais.
+    </p>
+  </section>
 
-    </div>
+  <section id="tecnologia">
+    <h2>Tecnologia no Campo</h2>
+    <ul>
+      <li>🌾 Agricultura de precisão</li>
+      <li>🚜 Máquinas automatizadas</li>
+      <li>📡 Sensores e monitoramento por satélite</li>
+    </ul>
+  </section>
 
-    <div class="controls">
+  <section id="sustentabilidade">
+    <h2>Sustentabilidade</h2>
+    <p>
+      Redução do uso de água, energia limpa e práticas agrícolas regenerativas
+      para manter o equilíbrio do planeta.
+    </p>
+  </section>
 
-      <button onclick="plantSeed()">🌱 Plantar</button>
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Email: contato@agroforte.com</p>
+  </section>
 
-      <button onclick="waterPlant()">💧 Regar</button>
+  <footer>
+    <p>© 2026 Agro Forte - Futuro Sustentável</p>
+  </footer>
 
-      <button onclick="fertilizePlant()">🧪 Adubo</button>
-
-      <button onclick="sprayPlant()">☠️ Veneno</button>
-
-      <button onclick="harvestPlant()">🚜 Colher</button>
-
-      <button onclick="cleanPollution()">🧹 Limpar</button>
-
-    </div>
-
-    <div class="bars">
-
-      <label>Vida</label>
-      <div class="bar">
-        <div id="health-bar"></div>
-      </div>
-
-      <label>Água</label>
-      <div class="bar">
-        <div id="water-bar"></div>
-      </div>
-
-      <label>Poluição</label>
-      <div class="bar">
-        <div id="pollution-bar"></div>
-      </div>
-
-    </div>
-
-    <div id="message-box">
-
-      Bem-vindo agricultor 🌾
-
-    </div>
-
-  </main>
-
-</div>
-
-<script src="audio.js"></script>
-<script src="weather.js"></script>
-<script src="save.js"></script>
-<script src="phases.js"></script>
-<script src="ui.js"></script>
-<script src="game.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
-```
-
-</html>
+  
+     
+      
